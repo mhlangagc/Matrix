@@ -29,7 +29,8 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        setupGradient()
+        fetchMovieData()
     }
 
     private func setupGradient() {

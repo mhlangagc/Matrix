@@ -9,7 +9,7 @@ import Foundation
 
 protocol MatrixNetworkProtocol {
     func searchMovie(withExpression expression: String,
-                            completion: @escaping(Result<MovieResultsModel, Error>) -> Void)
+                            completion: @escaping(Result<MovieResultsModel, APIError>) -> Void)
     func fetchFullCast(forMovieWithId id: String,
-                       completion: @escaping(Result<Movie, Error>) -> Void)
+                       completion: @escaping(Result<Movie, APIError>) -> Void)
 }

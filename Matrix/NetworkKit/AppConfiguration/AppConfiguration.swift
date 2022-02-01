@@ -10,7 +10,6 @@ import Foundation
 public class AppConfiguration {
     
     private enum InfoPlistKey: String {
-        case apiProtocol
         case secureApiProtocol
         case imdbURI
         case imdbAPIKey
@@ -19,7 +18,7 @@ public class AppConfiguration {
     static let infoDictionary = Bundle.main.infoDictionary
     
     static var secureApiProtocol: String {
-        return infoDictionary?[InfoPlistKey.secureApiProtocol.rawValue] as? String ?? "https"
+        return infoDictionary?[InfoPlistKey.secureApiProtocol.rawValue] as? String ?? ""
     }
     
     static var imdbURI: String {

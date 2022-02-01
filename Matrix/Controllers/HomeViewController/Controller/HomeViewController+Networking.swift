@@ -9,7 +9,7 @@ import Foundation
 
 extension HomeViewController {
     
-    func fetchData() {
-        
+    func fetchMovieData() {
+        viewModel.fetchMovie()
     }
 }

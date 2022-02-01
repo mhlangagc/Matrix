@@ -12,7 +12,7 @@ enum URLCenter {
     case searchMovie(expression: String)
     case fullCast(movieID: String)
     
-    public func buildURL(withPath path: String) -> String {
+    public func buildURL() -> String {
         switch self {
         case .searchMovie(let expression):
             return "\(AppConfiguration.secureApiProtocol)://\(AppConfiguration.imdbURI)/SearchMovie/\(AppConfiguration.imdbAPIKey)/\(expression)"
