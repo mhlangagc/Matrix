@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.makeKeyAndVisible()
         window.tintColor = .black
-        window.rootViewController = UINavigationController(rootViewController: HomeViewController())
+        window.rootViewController = UINavigationController(rootViewController: MovieViewController())
         return window
     }
 }

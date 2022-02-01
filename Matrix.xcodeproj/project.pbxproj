@@ -35,6 +35,7 @@
 		4783387427A9C22B00E3132C /* APIKitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783387327A9C22B00E3132C /* APIKitProtocol.swift */; };
 		4783387727A9C74300E3132C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783387627A9C74300E3132C /* APIError.swift */; };
 		4783387927A9C9DD00E3132C /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783387827A9C9DD00E3132C /* APIResponse.swift */; };
+		4783387B27A9D4F100E3132C /* HomeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4783387A27A9D4F100E3132C /* HomeViewController+CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		4783387327A9C22B00E3132C /* APIKitProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKitProtocol.swift; sourceTree = "<group>"; };
 		4783387627A9C74300E3132C /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		4783387827A9C9DD00E3132C /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		4783387A27A9D4F100E3132C /* HomeViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		8D34911772A5FDE47D3DECE1 /* Pods-Matrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Matrix.debug.xcconfig"; path = "Target Support Files/Pods-Matrix/Pods-Matrix.debug.xcconfig"; sourceTree = "<group>"; };
 		C31B69B0E3B80FF71D765CF3 /* Pods_Matrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Matrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				47678AA527A99D380065FFFA /* HomeViewController.swift */,
+				4783387A27A9D4F100E3132C /* HomeViewController+CollectionView.swift */,
 				473B69E227A9A9C5007A3564 /* HomeViewController+Networking.swift */,
 			);
 			path = Controller;
@@ -432,6 +435,7 @@
 				473B69E927A9ADE9007A3564 /* Directors.swift in Sources */,
 				4783386D27A9BBCB00E3132C /* AppConfiguration.swift in Sources */,
 				473B69F627A9B4BD007A3564 /* MatrixNetworkController.swift in Sources */,
+				4783387B27A9D4F100E3132C /* HomeViewController+CollectionView.swift in Sources */,
 				473B69F427A9B38E007A3564 /* Constraints.swift in Sources */,
 				473B69E327A9A9C5007A3564 /* HomeViewController+Networking.swift in Sources */,
 				473B69EB27A9ADFD007A3564 /* Item.swift in Sources */,
