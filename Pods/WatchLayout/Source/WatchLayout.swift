@@ -1,14 +1,28 @@
 //
-//  WatchCollectionFlowLayout.swift
-//  Matrix
+//  Copyright (c) 2021 Hoc Tran (https://hoctran.com/)
 //
-//  Created by Gugulethu Mhlanga on 2022/02/01.
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
 //
 
-import Foundation
 import UIKit
 
-final public class WatchCollectionFlowLayout: UICollectionViewLayout {
+final public class WatchLayout: UICollectionViewLayout {
     
     public var itemSize: CGFloat = 100 {
         didSet {
@@ -182,11 +196,17 @@ final public class WatchCollectionFlowLayout: UICollectionViewLayout {
         return result
     }
     
+//    public override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+//        guard let collectionView = self.collectionView else {
+//            return nil
+//        }
+//    }
+    
     public override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         return true
     }
     
-    // auto snap to center of item
+    //auto snap to center of item
     public override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
         guard let collectionView = self.collectionView else {
             return proposedContentOffset
@@ -226,8 +246,9 @@ private struct Multagon {
     init(_ numberOfVertex: Int, center: CGPoint, radius: CGFloat) {
         let step = CGFloat.pi / (CGFloat(numberOfVertex) * 0.5)
         vertexes = (0..<numberOfVertex).map { i in
-            CGPoint(x: center.x - radius * cos(CGFloat(i) * step),
-                    y: center.y - radius * sin(CGFloat(i) * step)
+            CGPoint(
+                x: center.x - radius * cos(CGFloat(i) * step),
+                y: center.y - radius * sin(CGFloat(i) * step)
             )
         }
     }

@@ -7,7 +7,12 @@
 
 import Foundation
 
-struct Actor: Codable {
+struct Actor: Codable, Comparable {
+    
+    static func < (lhs: Actor, rhs: Actor) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
     var id: String?
     var image: String?
     var name, asCharacter: String?

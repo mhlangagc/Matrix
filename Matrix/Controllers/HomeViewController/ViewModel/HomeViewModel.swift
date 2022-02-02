@@ -1,8 +1,10 @@
 import Foundation
+import RxSwift
 
 final class HomeViewModel {
     
     lazy var networkController = resolve(MatrixNetworkProtocol.self)
+    var movieCast = PublishSubject<[Actor]>()
     
     func fetchMovie() {
         let expression = "matrixressurections"
@@ -26,7 +28,11 @@ final class HomeViewModel {
                 case .failure(let error):
                     print(error)
                 case .success(let movieCast):
-                    print(movieCast)
+                    if let cast = movieCast.actors {
+                        self.movieCast.onNext(cast)
+                        self.movieCast.onCompleted()
+                    }
+                    
                 }
             }
         }

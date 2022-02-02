@@ -49,6 +49,7 @@ final class ActorCollectionCell: BaseCollectionViewCell {
     override func configureView() {
         super.configureView()
         layoutView()
+        layer.cornerRadius = frame.width * 0.5
     }
     
     private func layoutView() {

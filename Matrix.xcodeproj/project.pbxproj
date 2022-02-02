@@ -21,7 +21,6 @@
 		473B69F627A9B4BD007A3564 /* MatrixNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473B69F527A9B4BD007A3564 /* MatrixNetworkController.swift */; };
 		473B69F827A9B4E1007A3564 /* MatrixNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473B69F727A9B4E1007A3564 /* MatrixNetworkProtocol.swift */; };
 		473B69FD27A9B59A007A3564 /* MovieSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473B69FC27A9B59A007A3564 /* MovieSearch.swift */; };
-		473B69FF27A9B6C3007A3564 /* WatchCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473B69FE27A9B6C3007A3564 /* WatchCollectionFlowLayout.swift */; };
 		47678AA227A99D380065FFFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47678AA127A99D380065FFFA /* AppDelegate.swift */; };
 		47678AA627A99D380065FFFA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47678AA527A99D380065FFFA /* HomeViewController.swift */; };
 		47678AAB27A99D3A0065FFFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47678AAA27A99D3A0065FFFA /* Assets.xcassets */; };
@@ -53,7 +52,6 @@
 		473B69F527A9B4BD007A3564 /* MatrixNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixNetworkController.swift; sourceTree = "<group>"; };
 		473B69F727A9B4E1007A3564 /* MatrixNetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixNetworkProtocol.swift; sourceTree = "<group>"; };
 		473B69FC27A9B59A007A3564 /* MovieSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearch.swift; sourceTree = "<group>"; };
-		473B69FE27A9B6C3007A3564 /* WatchCollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCollectionFlowLayout.swift; sourceTree = "<group>"; };
 		47678A9E27A99D380065FFFA /* Matrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47678AA127A99D380065FFFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47678AA527A99D380065FFFA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -197,7 +195,6 @@
 		47678ABA27A99D7C0065FFFA /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
-				473B69FE27A9B6C3007A3564 /* WatchCollectionFlowLayout.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -439,7 +436,6 @@
 				473B69F427A9B38E007A3564 /* Constraints.swift in Sources */,
 				473B69E327A9A9C5007A3564 /* HomeViewController+Networking.swift in Sources */,
 				473B69EB27A9ADFD007A3564 /* Item.swift in Sources */,
-				473B69FF27A9B6C3007A3564 /* WatchCollectionFlowLayout.swift in Sources */,
 				4783386A27A9BB5600E3132C /* URLCenter.swift in Sources */,
 				473B69E527A9AD15007A3564 /* Movie.swift in Sources */,
 				473B69E127A9A990007A3564 /* HomeViewModel.swift in Sources */,

@@ -3,24 +3,32 @@ PODS:
   - Kingfisher (5.15.8):
     - Kingfisher/Core (= 5.15.8)
   - Kingfisher/Core (5.15.8)
+  - RxSwift (6.5.0)
   - SwiftLint (0.45.1)
+  - WatchLayout (1.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - Kingfisher (~> 5.15)
+  - RxSwift (= 6.5.0)
   - SwiftLint
+  - WatchLayout
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
+    - RxSwift
     - SwiftLint
+    - WatchLayout
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SwiftLint: 06ac37e4d38c7068e0935bb30cda95f093bec761
+  WatchLayout: 1c43562a8f10239f69e5cdc91a4887aac8b95254
 
-PODFILE CHECKSUM: 5e93dfd3f4524e3b1897c4e5e964d19577b6fd15
+PODFILE CHECKSUM: 63ef74cb33df444069236340ab8210c924f1d062
 
 COCOAPODS: 1.11.2

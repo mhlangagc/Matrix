@@ -6,17 +6,24 @@
 //
 
 import UIKit
+import WatchLayout
+import RxSwift
 
 final class MovieViewController: UIViewController {
 
     lazy var viewModel = HomeViewModel()
+    var bag = DisposeBag()
+    
+    lazy var flowLayout: WatchLayout = {
+        let flowLayout = WatchLayout()
+        flowLayout.itemSize = 150
+        flowLayout.spacing = -40
+        flowLayout.nextItemScale = 0.3
+        flowLayout.minScale = 0.15
+        return flowLayout
+    }()
     
     lazy var movieCastCollectionView: UICollectionView = {
-        let flowLayout = WatchCollectionFlowLayout()
-        flowLayout.itemSize = 200
-        flowLayout.spacing = -40
-        flowLayout.nextItemScale = 0.4
-        flowLayout.minScale = 0.2
         let collectionView = UICollectionView(frame: .zero,
                                               collectionViewLayout: flowLayout)
         collectionView.backgroundColor = .clear
@@ -31,7 +38,8 @@ final class MovieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGradient()
-        fetchMovieData()
+        // fetchMovieData()
+        bindToViewModel()
         layoutView()
         registerCells()
     }
